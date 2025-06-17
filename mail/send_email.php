@@ -1,6 +1,6 @@
 <?php
 // workaround without composer to access .env file
-$env = parse_ini_file('.././.env');
+$env = parse_ini_file(__DIR__ . '/../.env');
 
 // * NOTE : phpmailer needs to be in the same directory to work properly
 use PHPMailer\PHPMailer\PHPMailer;
