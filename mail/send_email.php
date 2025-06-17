@@ -17,7 +17,7 @@ class Email
 
     try {
       // workaround without composer to access .env file
-      $env = parse_ini_file(__DIR__ . '/../.env');
+      $env = parse_ini_file('.mail.env');
 
       //Server settings
       $mail->SMTPDebug = 0; // Enable verbose debug output
