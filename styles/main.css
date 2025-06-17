@@ -1,0 +1,17 @@
+* {
+  transition: all 300ms;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  margin-top: 6rem;
+  position: relative;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+select {
+  -webkit-appearance: none; /* Safari and Chrome */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+}

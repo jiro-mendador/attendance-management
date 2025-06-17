@@ -1,0 +1,5 @@
+TRUNCATE student_subject;
+TRUNCATE subject_attendance;
+TRUNCATE student_code;
+DELETE FROM subject WHERE id != 0;
+DELETE FROM user WHERE id != 43;
