@@ -1,7 +1,4 @@
 <?php
-// workaround without composer to access .env file
-$env = parse_ini_file(__DIR__ . '/../.env');
-
 // * NOTE : phpmailer needs to be in the same directory to work properly
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -19,6 +16,9 @@ class Email
     $mail = new PHPMailer(true);
 
     try {
+      // workaround without composer to access .env file
+      $env = parse_ini_file(__DIR__ . '/../.env');
+
       //Server settings
       $mail->SMTPDebug = 0; // Enable verbose debug output
       $mail->isSMTP(); // Set mailer to use SMTP
